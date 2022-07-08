@@ -4,6 +4,8 @@ num = 0
 while temp < n:
     num +=1
     
+    
+    
     temp = (num**2 +num)//2
 cnt = temp-n
 if num%2 == 0:
