@@ -3,4 +3,6 @@
 
 ####   *[백준](https://github.com/easydong02/Code_test/tree/main/Baekjoon)
 
-####   *[프로그래머스](https://github.com/easydong02/Code_test/tree/main/Baekjoon)
+####   *[프로그래머스](https://github.com/easydong02/Code_test/tree/main/Programmers)
+
+####   *[삼성 SWEA](https://github.com/easydong02/Code_test/tree/main/SWEA)
