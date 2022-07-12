@@ -6,6 +6,7 @@ while True:
     if a ==0:
         cnt = 1
         break
+        
     a= str(a)
     head = a[1]
     tail = str(int(a[0])+int(a[1]))[-1]
