@@ -16,3 +16,5 @@ for i in range(T):
         print(floor+"0"+room)
     else:
         print(floor+room)
+        
+        
