@@ -18,3 +18,5 @@ for i in range(T):
         print(floor+room)
         
         
+        
+        
