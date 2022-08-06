@@ -14,6 +14,7 @@ for i in range(T):
         room = str(N//H)
     if int(room) <10:
         print(floor+"0"+room)
+        
     else:
         print(floor+room)
         
