@@ -29,6 +29,7 @@ public class Main_1010 {
 	private static int ncr(int n, int m) {
 		if(dp[n][m] != null) {
 			return dp[n][m];
+			
 		}
 		
 		if(n==m || n==0) {
