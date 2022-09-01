@@ -18,6 +18,7 @@ public class Main_10026_적록색약 {
 			this.r = r;
 			this.c = c;
 			this.color = color;
+			
 		}
 	}
 	
