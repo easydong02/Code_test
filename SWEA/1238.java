@@ -29,6 +29,7 @@ public class Test2 {
         super();
         this.from = from;
         this.to = to;
+        
         this.level = level;
     }
 
