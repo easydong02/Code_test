@@ -11,6 +11,7 @@ public class Swea_Ladder {
 	static int N =100;
 	static int[][] ladder;
 	
+	
 	static int[] dr= {0,0};
 	static int[] dc= {-1,1};
 	
