@@ -18,6 +18,7 @@ public class Main_1074_Z {
 		
 		dnq(r,c,N);
 //		for(int []m: map) {
+		
 //			System.out.println(Arrays.toString(m));
 //		}
 		
