@@ -11,6 +11,7 @@ def solution(n, lost, reserve):
             if (stu[i] ==-1) and (stu[i+1]==1):
                 stu[i]=stu[i]+1
                 stu[i+1] = stu[i+1] -1
+                
 
     for i in stu:
         if i>=0:
