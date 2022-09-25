@@ -13,6 +13,8 @@ public class Main_1010 {
 		
 		T= Integer.parseInt(br.readLine());
 		
+		
+		
 		for (int i = 0; i < T; i++) {
 			StringTokenizer st= new StringTokenizer(br.readLine());
 			N= Integer.parseInt(st.nextToken());
