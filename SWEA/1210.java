@@ -32,6 +32,7 @@ public class Swea_Ladder {
 				for (int j = 0; j < N; j++) {
 					ladder[i][j]= Integer.parseInt(st.nextToken());
 				}
+				
 			} // end of reading
 			
 			for(int i=0;i<N;i++) { //도착지점 체크
