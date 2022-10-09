@@ -1,6 +1,7 @@
 def solution(n, lost, reserve):
     answer=0
     stu= [0 for i in range(n)]
+    
     for i in lost:stu[i-1] = stu[i-1]-1
     for i in reserve:stu[i-1] = stu[i-1] +1
     for i in range(len(stu)):
