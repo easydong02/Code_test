@@ -26,6 +26,7 @@ public class Main_10026_적록색약 {
 	static int N,normal,abnormal;
 	static char[][] map;
 	static boolean[][] visited;
+	
 	static boolean[][] visited2;
 	
 	static int[] dr= {-1,0,1,0};
