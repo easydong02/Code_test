@@ -30,6 +30,8 @@ public class Test2 {
         this.from = from;
         this.to = to;
         
+        
+        
         this.level = level;
     }
 
