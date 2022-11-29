@@ -7,6 +7,7 @@ def solution(answers):
         cnt=0
         for x,y in zip(i,answers):
             if x==y:
+                
                 cnt=cnt+1
         result.append(cnt)
     answer =[ i+1 for i in range(3) if result[i]==max(result)]
