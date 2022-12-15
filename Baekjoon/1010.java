@@ -19,9 +19,6 @@ public class Main_1010 {
 			M= Integer.parseInt(st.nextToken());
 			dp = new Integer[30][30];
 			
-			
-			
-			
 			System.out.println(ncr(N,M));
 			
 		}
