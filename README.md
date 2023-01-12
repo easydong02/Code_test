@@ -1,6 +1,8 @@
 # Code_test
 코딩 테스트 문제 푼 것 올려봐요!
 
+[2023-01-10]디렉토리 손봤습니다. 파일이름이랑 패키지명 등을 통일했습니다.
+
 
 ####   *[백준](https://github.com/easydong02/Code_test/tree/main/Baekjoon)
 
