@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Bj10824 {
 	
 	static StringBuilder sb;
+	static boolean more10 = false;
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
 		sb= new StringBuilder();
@@ -13,21 +14,27 @@ public class Bj10824 {
 		String a = input[0]+input[1];
 		String b= input[2]+input[3];
 		
-		Boolean more10 = false;
+		
 		
 		int maxsize = Math.max(a.length(), b.length());
 		int minsize = Math.min(a.length(), b.length());
 		String big = a.length()> b.length()? a:b;
 		
 		if(maxsize==minsize) {
-			go(a,b,maxsize,more10);
+			go(a,b,maxsize);
+			if(more10)sb.insert(0, 1);
 		}else {
-			go(a,b,minsize,more10);
+			go(a,b,minsize);
 			
 			for (int i = maxsize-minsize-1; i >=0; i--) {
 				if(more10) {
-					sb.insert(0,Integer.parseInt(big.substring(i,i+1))+1 );
-					more10= false;
+					int num =Integer.parseInt(big.substring(i,i+1))+1;
+					if(num>9) {
+						sb.insert(0,num-10);
+					}else {
+						more10=false;
+						sb.insert(0, num);
+					}
 				}else {
 					sb.insert(0,big.substring(i,i+1));
 				}
@@ -37,7 +44,7 @@ public class Bj10824 {
 		System.out.println(sb.toString());
 	}
 
-	private static void go(String a, String b, int size, Boolean more10) {
+	private static void go(String a, String b, int size) {
 		int sizeA= a.length();
 		int sizeB= b.length();
 		
