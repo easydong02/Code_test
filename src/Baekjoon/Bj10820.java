@@ -8,7 +8,7 @@ public class Bj10820 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		String str = "";
+		String str = "";Eod
 		while((str = br.readLine())!=null) {
 			char[] arr =str.toCharArray();
 			int s =0;
