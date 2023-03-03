@@ -18,7 +18,6 @@ public class Bj1010 {
 			N= Integer.parseInt(st.nextToken());
 			M= Integer.parseInt(st.nextToken());
 			dp = new Integer[30][30];
-			
 			System.out.println(ncr(N,M));
 			
 		}
