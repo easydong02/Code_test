@@ -12,6 +12,8 @@ public class Swea1208 {
 	static int dump;
 	static int[] boxes;
 	
+
+
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		boxes = new int[N];
 		
