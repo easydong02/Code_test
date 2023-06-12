@@ -53,14 +53,28 @@ public class Bj7568 {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			que.add(new Student(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()),i));
 		}
-		
+		int cnt = 1;
+		int cum = 1;
 		while(!que.isEmpty()) {
 			Student st = que.poll();
 			Student tmp = que.peek();
-			
-			if(st.comp(tmp) == 1) {
-				
+			if(tmp == null) {
+				break;
 			}
+			
+			if(st.comp(tmp) == 0) {
+				result[st.n] = cnt;
+				result[tmp.n] = cnt;
+				cum += ++cnt;
+			}else {
+				result[tmp.n]=cum;
+				cnt = cum;
+				cum =1;
+			}
+		}
+		
+		for (int i = 0; i < result.length; i++) {
+			System.out.print(result[i]+" ");
 		}
 	}
 
