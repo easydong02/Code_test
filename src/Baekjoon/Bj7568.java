@@ -54,23 +54,34 @@ public class Bj7568 {
 			que.add(new Student(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()),i));
 		}
 		int cnt = 1;
-		int cum = 1;
+		int cum = 0;
 		while(!que.isEmpty()) {
 			Student st = que.poll();
 			Student tmp = que.peek();
 			if(tmp == null) {
 				break;
 			}
-			
-			if(st.comp(tmp) == 0) {
-				result[st.n] = cnt;
-				result[tmp.n] = cnt;
-				cum += ++cnt;
+			int chk = st.comp(tmp);
+			result[st.n] = cnt;
+			if(chk == 0) {
+				cum ++;
 			}else {
-				result[tmp.n]=cum;
-				cnt = cum;
-				cum =1;
+				if(cum ==0) {
+					cnt ++;
+				}else {
+					cnt += (cum+1);
+					cum =0;
+				}
 			}
+			
+			if(que.isEmpty()) {
+				if(chk == 0 ) {
+					result[tmp.n]=cnt;
+				}else {
+					result[tmp.n]= cum + cnt;
+				}
+			}
+			
 		}
 		
 		for (int i = 0; i < result.length; i++) {
