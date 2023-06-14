@@ -44,48 +44,31 @@ public class Bj7568 {
 	}
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine());
-		PriorityQueue<Student> que =new PriorityQueue<>();
-		int[] result = new int[n];
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		for (int i = 0; i < n; i++) {
-			StringTokenizer st = new StringTokenizer(br.readLine());
-			que.add(new Student(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()),i));
-		}
-		int cnt = 1;
-		int cum = 0;
-		while(!que.isEmpty()) {
-			Student st = que.poll();
-			Student tmp = que.peek();
-			if(tmp == null) {
-				break;
-			}
-			int chk = st.comp(tmp);
-			result[st.n] = cnt;
-			if(chk == 0) {
-				cum ++;
-			}else {
-				if(cum ==0) {
-					cnt ++;
-				}else {
-					cnt += (cum+1);
-					cum =0;
-				}
-			}
-			
-			if(que.isEmpty()) {
-				if(chk == 0 ) {
-					result[tmp.n]=cnt;
-				}else {
-					result[tmp.n]= cum + cnt;
-				}
-			}
-			
+		int N = Integer.parseInt(br.readLine());
+ 
+		int[][] arr = new int[N][2];
+ 
+		String[] sp;
+		for(int i = 0; i < N; i++) {
+			sp = br.readLine().split(" ");			// 문자열 분리
+			arr[i][0] = Integer.parseInt(sp[0]);	// [i][0] : 몸무게 
+			arr[i][1] = Integer.parseInt(sp[1]);	// [i][1] : 키 
 		}
 		
-		for (int i = 0; i < result.length; i++) {
-			System.out.print(result[i]+" ");
+				
+		for(int i = 0; i < N; i++) {
+			int rank = 1;
+			
+			for(int j = 0; j < N; j++) {
+				if(i == j) continue;
+				if (arr[i][0] < arr[j][0] && arr[i][1] < arr[j][1]) {
+					rank++;
+				}
+			}
+ 
+			System.out.print(rank + " ");
 		}
 	}
 
