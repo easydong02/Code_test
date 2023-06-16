@@ -15,6 +15,8 @@ public class Bj2501 {
 		int n = Integer.parseInt(st.nextToken());
 		
 		int k = Integer.parseInt(st.nextToken());
+		
+		
 	}
 
 }
