@@ -29,6 +29,7 @@ public class Bj10819 {
 			result += (arr[arr.length-i-1]-arr[i]);
 		}
 		System.out.println(result);
+		
 	}
 
 }
