@@ -3,7 +3,6 @@ package SWEA;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import sun.text.resources.cldr.or.FormatData_or;
 
 public class Swea1961 {
 	static int T;
