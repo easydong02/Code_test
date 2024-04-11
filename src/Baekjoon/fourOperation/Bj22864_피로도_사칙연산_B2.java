@@ -1,11 +1,11 @@
-package Baekjoon;
+package Baekjoon.fourOperation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Bj22864 {
+public class Bj22864_피로도_사칙연산_B2 {
     static int A;
     static int B;
     static int C;

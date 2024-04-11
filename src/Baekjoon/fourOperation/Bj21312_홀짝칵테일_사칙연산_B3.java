@@ -1,4 +1,4 @@
-package Baekjoon;
+package Baekjoon.fourOperation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class Bj21312 {
+public class Bj21312_홀짝칵테일_사칙연산_B3 {
 
     static int A;
     static int B;

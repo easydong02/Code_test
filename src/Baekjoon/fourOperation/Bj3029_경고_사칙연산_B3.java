@@ -1,10 +1,10 @@
-package Baekjoon;
+package Baekjoon.fourOperation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Bj3029 {
+public class Bj3029_경고_사칙연산_B3 {
     public static void main(String[] args) throws IOException {
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 

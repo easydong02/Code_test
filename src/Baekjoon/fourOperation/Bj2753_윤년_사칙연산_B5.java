@@ -1,10 +1,10 @@
-package Baekjoon;
+package Baekjoon.fourOperation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Bj2753 {
+public class Bj2753_윤년_사칙연산_B5 {
     static int N;
 
     public static void main(String[] args) throws IOException {
